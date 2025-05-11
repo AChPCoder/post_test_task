@@ -13,7 +13,7 @@ use App\Helper\H;
         <label class="d-flex flex-column">
             <span>Ключевая фраза</span>
             <input type="text" name="s" placeholder="Введите сюда для поиска от 3 символов" <?=
-            !empty($search_term) ? 'value="' . $search_term . '"' : '' ?> autocomplete="off"/>
+            !empty($search_term) ? 'value="' . H::e($search_term) . '"' : '' ?> autocomplete="off"/>
         </label>
         <button type="submit">Найти</button>
     </form>

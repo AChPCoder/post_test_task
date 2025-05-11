@@ -1,0 +1,104 @@
+html {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-clip: padding-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.search-form > * {
+    padding: .5rem;
+}
+
+.search-form input {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.search-items-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    row-gap: 2rem;
+}
+
+.search-items-list--item {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    column-gap: .5rem;
+}
+
+.search-items-list--item > * {
+    display: flex;
+    column-gap: inherit;
+}
+
+.search-items-list--item-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.search-items-list--item-body {
+    padding: .25rem;
+    border: dashed 2px #56565680;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.search-items-list--item-comment {
+    display: flex;
+    flex-direction: column;
+    column-gap: .5rem;
+}
+
+.search-items-list--item-comment > * {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.search-items-list--errors {
+    font-weight: bold;
+    color: #E81123;
+    border: solid 1px #E81123;
+    background-color: #E8112340;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+}
+
+.search-items-list--not-found {
+    font-weight: bold;
+    color: #ccbc0e;
+    border: solid 1px #e8d611;
+    background-color: #e8d61140;
+    padding: .5rem;
+}

@@ -39,10 +39,12 @@ class Cli
             case '1':
                 $migration = new M20250509_0900_create_tables();
                 $migration->Up();
+                echo 'Adding tables finished';
                 break;
             case '0':
                 $migration = new M20250509_0900_create_tables();
                 $migration->Down();
+                echo 'Removing tables finished';
                 break;
             default:
                 throw new \Exception('Need specify second arg as 1 ot 0 to select apply or revert migration');

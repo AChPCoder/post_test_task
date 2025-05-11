@@ -84,7 +84,9 @@ class IndexController
                 }
             }
         } else {
-            $errors['invalid_search_term_count'] = 'Запрос должен быть от 3 символов';
+            if (key_exists('s', $_GET)) {
+                $errors['invalid_search_term_count'] = 'Запрос должен быть от 3 символов';
+            }
         }
 
         $data['search_items'] = $items;

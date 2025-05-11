@@ -1,16 +1,18 @@
-CREATE TABLE posts
+CREATE TABLE IF NOT EXISTS `posts`
 (
-    id     int,
-    userId int,
-    title  varchar(255),
-    body   text
+    `id`     INT(11) AUTO_INCREMENT,
+    `userId` INT(11),
+    `title`  VARCHAR(255),
+    `body`   TEXT,
+    PRIMARY KEY (`id`)
 ) ENGINE = MyISAM COLLATE utf8_general_ci;
 
-CREATE TABLE comments
+CREATE TABLE IF NOT EXISTS `comments`
 (
-    id     int,
-    postId int,
-    name   varchar(255),
-    email  varchar(255),
-    body   text
+    `id`     INT(11) AUTO_INCREMENT,
+    `postId` INT(11),
+    `name`   VARCHAR(255),
+    `email`  VARCHAR(255),
+    `body`   TEXT,
+    PRIMARY KEY (`id`)
 ) ENGINE = MyISAM COLLATE utf8_general_ci;
